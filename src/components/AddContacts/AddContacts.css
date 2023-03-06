@@ -1,0 +1,41 @@
+.phonebook-form {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+}
+
+.phonebook-form__input {
+  width: 190x;
+  height: 20px;
+  margin-left: 20px;
+}
+
+.phonebook-form__label {
+  display: flex;
+}
+
+.phonebook-form__label-name {
+  display: block;
+  width: 40px;
+}
+
+.phonebook-form__btn {
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  border: 1px solid green;
+  cursor: pointer;
+  transform: scale(1);
+  transition: background-color 0.5s, color 0.5s, transfrom 0.5s;
+}
+
+.phonebook-form__btn:hover,
+.phonebook-form__btn:focus {
+  background-color: black;
+  color: aliceblue;
+  transform: scale(1.1);
+  transition: background-color 0.5s, color 0.5s, transfrom 0.5s;
+}

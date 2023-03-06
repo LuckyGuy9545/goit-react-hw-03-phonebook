@@ -1,0 +1,55 @@
+.contact-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 110px;
+  list-style-type: none;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid orange;
+}
+
+.contact-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contact-list__item-p {
+  margin: 5px auto;
+  display: flex;
+  color: rgb(23, 63, 164);
+  font-size: larger;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-list__item-span {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.contact-list__btn {
+  padding: 10px;
+  width: 70px;
+  border-radius: 10px;
+  border: 1px solid red;
+  cursor: pointer;
+  transform: scale(1);
+  transition: background-color 0.5s, color 0.5s, transfrom 0.5s;
+}
+
+.contact-list__btn:hover,
+.contact-list__btn:focus {
+  background-color: black;
+  color: aliceblue;
+  transform: scale(1.1);
+  transition: background-color 0.5s, color 0.5s, transfrom 0.5s;
+}
